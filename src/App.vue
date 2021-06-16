@@ -2,34 +2,29 @@
   <the-header></the-header>
   <div class="container">
     <router-view></router-view>
-    <p>{{info}}</p>
+<!--    <p>{{info}}</p>-->
+<!--    <button v-on:click="showMust"></button>-->
   </div>
 
 </template>
 
 <script>
   import TheHeader from './components/TheHeader.vue'
+
   import axios from 'axios'
 
   export default {
-    data() {
-      return {
-        info: null,
-      }
-    },
-    components: {
-      TheHeader
-    },
-    mounted() {
-      function getHeroesData(){
-        axios
-          .get('https://swapi.dev/api/people/')
-          .then(function (response) {
-            showDetail(response.data)
-          })
-      }
-      getHeroesData()
+  data(){
+    return{
+
     }
+  },
+    methods:{},
+    components:{
+    TheHeader,
+    },
+
+
   }
 </script>
 

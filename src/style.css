@@ -3,15 +3,21 @@ body{
 }
 .container{
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1260px;
+    padding: 0 30px;
+}
+.header{
+    margin-bottom: 4%;
 }
 .header__inner{
     display: flex;
     justify-content: space-between;
 }
+.header__logo{
+
+}
 .menu__list{
-
-
+    padding: 0;
 }
 .menu__item{
     display: inline-block;
@@ -35,3 +41,69 @@ body{
     background-color: black;
     color: white;
 }
+
+/*карточка героя*/
+
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+
+
+}
+.card__img{
+    max-width: 100%;
+}
+.card__like{
+    text-decoration: none;
+    color: black;
+}.card__name{
+     font-weight: bold;
+ }
+
+
+/*галерея*/
+.gallery{
+    margin: 0 -1%;
+}
+.gallery__list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+.gallery__item{
+    list-style: none;
+    width: 20%;
+    margin-bottom: 10%;
+}
+
+
+
+@media all and (max-width:1065px) {
+    .header__logo{
+        width: 45%;
+    }
+    .gallery__item{
+        width: 33.33333%;
+    }
+}
+@media all and (max-width:700px) {
+
+    .gallery__item{
+        width: 50%;
+    }
+    .card__name{
+        font-size: 25px;
+    }
+}
+@media all and (max-width:550px) {
+
+    .gallery__item{
+        width: 100%;
+    }
+    .card__name{
+        font-size: 30px;
+    }
+}
+

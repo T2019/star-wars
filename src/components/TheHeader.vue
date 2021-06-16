@@ -14,9 +14,9 @@
             </ul>
           </nav>
         </div>
-        <div class="header__logo">
-          <img src="../assets/logo.svg" alt="">
-        </div>
+
+          <img class="header__logo" src="../assets/logo.svg" alt="">
+
       </div>
     </div>
   </div>
